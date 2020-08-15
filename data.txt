@@ -7,3 +7,5 @@ press i to enter insert mode and type
 press esp then a colon to enter last line mode when finished typeing 
 
 finally type x to save or q to quit without saveing
+
+type vimtutor for vims built in tutorial
