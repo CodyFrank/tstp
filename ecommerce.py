@@ -4,10 +4,11 @@ class Customer:
         self.email = email
         self.purchases = []
 
-    def purchase(self, inventpry, product):
+    def purchase(self, inventory, product):
         inventory_dict = inventory.inventory
         if product in inventory_dict:
             if inventory_dict[product] > 0:
+                print("The customer has purchased {}".format(product.name))
                 self.purchases.append(product)
                 inventory_dict[product] -= 1
             else:
@@ -64,4 +65,6 @@ inventory.print_inventory()
 cust.purchase(inventory, apple_watch)
 
 cust.print_purchases()
+inventory.print_inventory()
+cust.purchase(inventory, mac)
 inventory.print_inventory()
