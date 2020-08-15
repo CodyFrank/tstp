@@ -1,0 +1,9 @@
+Hello, World!
+First time ever using vim. I think this is very cool and much worth looking into further. 
+
+remember vim file name will open or create that file in command mode. 
+press i to enter insert mode and type
+
+press esp then a colon to enter last line mode when finished typeing 
+
+finally type x to save or q to quit without saveing
