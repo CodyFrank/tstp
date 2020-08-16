@@ -26,3 +26,13 @@ class LinkedList:
             print(node.data)
             node = node.next
 
+    def search(self, target):
+        current = self.head
+        while current != None:
+            if current.data == target:
+                print("Found it!")
+                return True
+            else:
+                current = current.next
+            print("Not found.")
+            return False
