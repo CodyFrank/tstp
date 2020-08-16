@@ -1,3 +1,6 @@
+import random
+
+
 class Node:
     def __init__(self, data = None, next = None):
         self.data = data
@@ -36,3 +39,10 @@ class LinkedList:
                 current = current.next
             print("Not found.")
             return False
+
+the_list = LinkedList()
+for j in range(0, 20):
+    j = random.randint(1, 30)
+    the_list.append_node(j)
+the_list.print_list()
+the_list.search(10)
